@@ -1,5 +1,5 @@
 @0
-   MOV -65 ACC
+   MOV -32 ACC
    MOV UP  DOWN
    MOV UP  RIGHT
    MOV UP  RIGHT
@@ -11,7 +11,7 @@ L: SWP
 O: MOV ACC DOWN
    MOV ACC DOWN
    SWP
-   ADD 2
+   ADD 1
    JLZ L
    JMP O
 
@@ -29,8 +29,8 @@ S: SAV
    SUB LEFT
    JLZ L
 G: MOV LEFT ACC
-   JEZ Z
-   JMP N
+   JNZ N
+   JMP Z
 
 @2
 
@@ -49,8 +49,8 @@ S: SAV
    SUB UP
    JLZ L
 G: MOV UP ACC
-   JEZ Z
-   JMP N
+   JNZ N
+   JMP Z
 
 @4
    MOV UP ACC
@@ -82,14 +82,15 @@ S: SAV
    SUB UP
    JLZ L
 G: MOV UP ACC
-   JEZ Z
-   JMP N
+   JNZ N
+   JMP Z
 
 @6
 
 
 @7
-   MOV ANY ACC
+   MOV RIGHT NIL
+   MOV LEFT ACC
    JNZ S
 L: MOV RIGHT ACC
 Z: SWP
@@ -100,23 +101,20 @@ S: SAV
    JLZ L
 G: MOV RIGHT ACC
    JNZ N
-   SWP
-   MOV ACC DOWN
-   MOV   0 DOWN
-   MOV RIGHT NIL
+   JMP Z
 
 @8
-   MOV UP ACC
-   JMP S
-
 L: MOV UP ACC
 Z: SWP
-N: MOV ACC LEFT
-   MOV ACC LEFT
+N: MOV ACC LAST
+   MOV ACC ANY
    SWP
 S: SAV
    SUB UP
    JLZ L
 G: MOV UP ACC
-   JEZ Z
-   JMP N
+   JNZ N
+   SWP
+   MOV ACC LEFT
+   MOV ACC LEFT
+   MOV UP NIL
