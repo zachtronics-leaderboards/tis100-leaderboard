@@ -27,17 +27,16 @@ MOV -999 LEFT
 
 
 @6
-   SUB UP
-   SAV
-  JLZ L
-   SUB ACC
 L: ADD UP
    MOV ACC DOWN
+  JLZ U
    MOV ACC DOWN
    SWP
+U: SUB UP
   JGZ G
    SUB ACC
 G: ADD UP
+   SAV
 
 @7
 
