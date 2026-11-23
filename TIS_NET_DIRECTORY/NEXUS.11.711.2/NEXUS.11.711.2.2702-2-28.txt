@@ -1,0 +1,57 @@
+@0
+#2702/2/28
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+B: ADD 58
+JLZ B
+C: SUB 2
+MOV -1 DOWN
+JGZ C
+MOV 912 ACC
+D: SUB 114
+MOV 1 DOWN
+JGZ D
+JLZ B
+MOV 99 DOWN
+SWP
+ADD 55
+SAV
+JMP D
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV 0 DOWN
+MOV ACC DOWN
+SUB 9
+JLZ B
+SUB UP
+B: SUB 8
+NEG
+A: MOV 3 DOWN
+JRO UP
+MOV 0 DOWN
+JRO UP
+JMP A
+MOV -1 DOWN
+
+@10
