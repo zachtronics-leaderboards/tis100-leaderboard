@@ -1,5 +1,13 @@
 @0
+## 81/6/12
 
+# ASTRA 6.2
+
+# COMBINED IDEAS
+# FROM LFR'S
+# 112/5/14
+# AND FROM JP'S
+# 82/8/16
 
 @1
 N:MOV UP ACC
