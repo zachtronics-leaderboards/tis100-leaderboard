@@ -1,9 +1,5 @@
-81/5/43/h|Amitai/LongingForRest||hCN,hCX
-81/6/42/h|Amitai/LongingForRest||
-81/7/41/h|Amitai/LongingForRest||hCI
-81/9/61/c|Amitai/LongingForRest||cCN,cCX
-81/10/60/c|Amitai/LongingForRest||cCI
-82/8/16|jpgrossman||CN,CI,CX
+81/5/43/h|Amitai/LongingForRest||hCN
+81/6/12|jpgrossman/LongingForRest/Astra 6.2||CN,CI,CX,IC,IN,IX,cCN,cCI,cCX,cIC,cIN,cIX,hCI,hCX,hIC,hIN,hIX
 112/5/14|LongingForRest||
 115/4/47/c|easone/LongingForRest||cNC,hNC
 116/4/46/h|easone/LongingForRest||
@@ -35,4 +31,4 @@
 151/4/16/c|Brian142857||
 152/4/15|easone||
 155/4/14|Brian142857||NX,cNX,hNX
-173/4/13|jpgrossman||NI,IC,IN,IX,cNI,cIC,cIN,cIX,hNI,hIC,hIN,hIX
+173/4/13|jpgrossman||NI,cNI,hNI
