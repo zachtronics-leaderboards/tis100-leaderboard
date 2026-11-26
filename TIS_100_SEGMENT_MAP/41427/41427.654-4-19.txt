@@ -1,0 +1,49 @@
+@0
+
+
+@1
+R: SUB 999
+
+G: MOV -3 DOWN
+   MOV ACC LAST
+   MOV ACC ANY
+
+  JGZ R
+   MOV UP ACC
+  JGZ G
+
+   MOV 4 DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+ MOV ANY DOWN
+
+@6
+
+
+@7
+
+
+@8
+  MOV ACC ANY
+  SUB 999
+  SUB UP
+  ADD ANY
+  SWP
+ JRO UP
+  ADD 999
+
+@9
+MOV -999 LEFT
+MOV  999 LEFT
+MOV LEFT DOWN
+
+@10
